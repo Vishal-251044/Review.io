@@ -1,0 +1,140 @@
+.home {
+    text-align: center;
+    color: rgb(0, 235, 247);
+    padding: 20px;
+}
+
+.event-form,
+.features,
+.how-it-works,
+.contact {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    padding-top: 0px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #ffff00;
+    transition: width 0.3s ease-in-out;
+}
+
+.section-title:hover::after {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #00fff7;
+    box-sizing: border-box;
+}
+
+.textarea-field {
+    height: 100px;
+}
+
+.btn {
+    background: #ffea00;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #c9bc00;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: rgba(118, 118, 118, 0.914);
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.step {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    color: rgba(110, 110, 110, 0.914);
+}
+
+.copy-btn {
+    background-color: #ffea00;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .steps {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .step {
+        flex: 1;
+        margin: 5px;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-field,
+    .textarea-field {
+        width: 90%;
+    }
+}
