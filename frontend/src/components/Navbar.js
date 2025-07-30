@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Logo */}
-      <div className="logo">Review.NLP</div>
+      <div className="logo">Review.io</div>
 
       {/* Login Button / Profile Icon */}
       {user ? (
